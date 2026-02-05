@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;;
 }
 .container {
   width: 100%;
@@ -10,7 +11,7 @@
   margin: auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 80px min-content min-content min-content;
+  grid-template-rows: 80px min-content 100vh min-content;
   grid-template-areas:
     "header"
     "about-us"
@@ -46,8 +47,9 @@
   margin: auto;
 }
 .about-us .we-are span {
-  font-size: 1.8em;
+  font-size: 2em;
   color: orange;
+  font-family: 'Dancing Script', cursive;
 }
 .about-us .heading-div h1 {
   font-size: 3em;
@@ -55,6 +57,7 @@
 .about-us .heading-div span {
   color: green;
   font-size: 1em;
+  font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .about-us .btn-about {
   margin-top: 25px;
@@ -76,15 +79,22 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
+.btn-about a:hover
+{
+  padding: 60px;
+  color: black;
+  background-color: white;
+}
 /* vegitable img */
 .about-us .veg-img {
   position: absolute;
   width: 350px;
-  height: 350px;
+  height: 450px;
   right: 15%;
-  top: 5%;
+  top: 0%;
   z-index: 2;
 }
+
 .about-us .veg-img img {
   width: 100%;
   height: 100%;
@@ -92,26 +102,256 @@
 /* bottom div of about us page */
 .about-us .about-bottom-div {
   width: 80%;
-  height: 100px;
+  height: 120px;
   position: absolute;
   bottom: 0;
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
  background-color: white;
+ display: flex;
 }
 .about-us .about-bottom-div:hover
 {
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+.about-us .about-bottom-div .box{
+flex-basis: 25%;
+padding: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 8px;
+}
+.about-bottom-div .box .icon-btm
+{
+  height: 50px;
+  width: 80px;
+  margin-left: 10px;
+}
+.about-bottom-div .box .icon-btm h4
+{
+  font-weight: 100;
+}
+.about-bottom-div .box .icon-btm img
+{
+  width: 100%;
+  height: 100%;
+}
+.about-bottom-div .box span{
+  font-size: 1.2em;
+}
+.about-bottom-div .box p
+{
+  color: rgb(97, 97, 97);
+  font-size: 0.8em;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+#prod
+{
+  font-weight: bold;
+}
+@media only screen and (max-width:500px) {
+  .container {
+  grid-template-rows: 80px min-content min-content min-content;
+}
+.container .about-us
+{
+  height: 165vh;
+}
+.about-us .about-bottom-div {
+  width: 80%;
+  height: 500px;
+ bottom: 0%;
+}
+  .about-us .heading-div h1{
+    font-size: 2em;
+  }
+  .about-us .veg-img
+  {
+    height: 100px;
+    width: 100px;
+  }
+  .about-us .veg-img {
+  width: 150px;
+  height: 150px;
+  right: 12%;
+  top: 12%;
+  z-index: 2;
+}
+  .about-us .about-bottom-div 
+  {
+    flex-direction: column;
+  }
+}
+
+/* why choose us */
+
 .container .why-choose-us {
   grid-area: why-choose-us;
+  background-color: #FFFDEB;
+}
+.rows-1
+{
+  width: 80%;
+  margin: auto;
+}
+.why-choose-us .why-title
+{
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+  width: 80%;
+  margin: auto;
+}
+.why-choose-us .why-title p
+{
+  color: orange;
+ font-family: 'Caveat', cursive;
+  font-size: 1.6em;
+}
+.rows-2
+{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  flex-basis: 33%;
+  gap: 10px;
+}
+.why-box 
+{
+  display: flex;
+  flex-direction: column;
+}
+.why-choose-us .why-1
+{
+  display: flex;
+  flex-basis: 37%;
+}
+.rows-2 .inner-row
+{
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.inner-row .why-content
+{
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.inner-row .why-content h3
+{
+  text-align: end;
+}
+.inner-row .why-content p
+{
+  text-align: end;
+  margin: auto;
+  font-size: 1em;
+}
+.inner-row .why-content-img
+{
+  height: 80px;
+  width: 180px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(55, 181, 55);
+}
+
+.inner-row .why-content-img i
+{
+  font-size: 2em;
+  color: white;
+}
+.why-choose-us .why-img
+{
+  flex-basis: 25%;
+}
+.why-choose-us .why-img img
+{
+  width: 100%;
+  height: 100%;
+}
+.why-choose-us .why-2
+{
+  flex-basis: 37%;
+}
+.why-2 .inner-row p{
+  text-align: start;
+}
+.inner-row .why-content p
+{
+  font-size: 0.8em;
+}
+.inner-row .why-content h3
+{
+  font-size: 1.2em;
+}
+.why-2  .inner-row h3
+{
+  text-align: start;
+}
+
+@media only screen and (max-width:500px) {
+  .rows-1
+{
+  width: 100%;
+}
+.rows-2
+{
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  flex-basis: 33%;
+  gap: 10px;
+}
+.why-choose-us .why-1
+{
+  flex-basis: 100%;
+}
+.why-choose-us .why-img
+{
+  flex-basis: 100%;
+}
+.why-choose-us .why-2
+{
+  flex-basis: 100%;
+}
+
+.inner-row .why-content h3
+{
+  text-align: start;
+  font-size: 1.5em;
+}
+.inner-row .why-content p
+{
+  text-align: start;
+  margin: auto;
+  font-size: 1em;
+}
 }
 .container .footer {
   grid-area: footer;
