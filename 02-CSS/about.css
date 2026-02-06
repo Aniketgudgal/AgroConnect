@@ -237,8 +237,13 @@
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
+.rows-2 .inner-row:hover {
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   background-color: white;
+}
 .inner-row .why-content {
   padding: 8px;
   display: flex;
