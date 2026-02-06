@@ -11,7 +11,7 @@ html
 .container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: min-content min-content min-content min-content;
+  grid-template-rows: min-content 86.5vh min-content min-content;
   grid-template-areas:
     "header"
     "content"
