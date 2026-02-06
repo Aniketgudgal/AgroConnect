@@ -478,6 +478,6 @@
     top: 5%;
   }
 }
-.container .footer {
+.container .section-footer {
   grid-area: footer;
 }
