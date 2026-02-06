@@ -5,24 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link rel="stylesheet" href="../02-CSS/blog.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="header"></div>
+      <div class="header">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./04-assets/final-text-logo-1.png" alt="" />
+          </div>
+
+          <!-- Hamburger (mobile) -->
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+          <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../01-HTML/about.html">About</a></li>
+
+            <li class="dropdown">
+              <a href="#">Services ▾</a>
+              <ul id="drop" class="dropdown-content">
+                <li><a href="../01-HTML/Organic.html">Explore Organic</a></li>
+                <li><a href="../01-HTML/Organic.html">Organic Farm</a></li>
+                <li><a href="#">Farmer Corner</a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+
+            <li><a href="../01-HTML/blog.html">Blog</a></li>
+            <li><a href="../01-HTML/contact.html">Contact</a></li>
+          </ul>
+          <div class="btn-s">
+            <button class="signin">Sign In</button>
+            <button class="lang">EN</button>
+          </div>
+        </nav>
+      </div>
       <div class="content">
         <div class="content-famer">
           <h1>Always Greet Farmers For The Food We Eat</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet,
-            tempore, molestiae quibusdam itaque rerum quae commodi in ut dolorum
-            aliquid magnam dolor porro at! Qui molestiae minus laborum culpa
-            dolore.
+            Farmers are the backbone of our food system, working tirelessly to
+            grow the fresh and healthy produce we enjoy every day. At Easy Farm,
+            we honor their dedication by supporting sustainable organic farming
+            and connecting their harvest directly to your home. By choosing
+            organic and farm-fresh products, you not only nourish your family
+            but also empower hardworking farmers and promote a healthier planet.
           </p>
-          <a href="">View More <i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="../01-HTML/Organic.html"
+            >View More <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
         </div>
         <div class="seed-img">
           <img src="../04-assets/blog-img/Muda-de-flor.jpg" alt="not found" />
@@ -30,130 +74,154 @@
       </div>
       <div class="blogs">
         <div class="latest-title">
-            <a href="">Latest Blog</a>
-            <h1>Latest Post & articles</h1>
+          <a href="">Latest Blog</a>
+          <h1>Latest Post & articles</h1>
         </div>
         <div class="blog-post">
-            <div class="box box-1">
-                <div class="box-img">
-                    <a href="">Focus </a>
-                    <img src="../04-assets/blog-img/download.jpg" alt="not found">
-                </div>
-                <div class="box-owner">
-                   <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
-                </div>
-                <div class="box-title"><h3>What Technology is used in vertical farming?</h3></div>
+          <div class="box box-1">
+            <div class="box-img">
+              <a href="">Focus </a>
+              <img src="../04-assets/blog-img/download.jpg" alt="not found" />
             </div>
-              <div class="box box-2">
-                <div class="box-img">
-                    <a href="">Focus </a>
-                    <img src="../04-assets/blog-img/download.jpg" alt="not found">
-                </div>
-                <div class="box-owner">
-                   <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
-                </div>
-                <div class="box-title"><h3>What Technology is used in vertical farming?</h3></div>
+            <div class="box-owner">
+              <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
             </div>
-            <div class="box box-3">
-                <div class="box-img">
-                    <a href="">Focus </a>
-                    <img src="../04-assets/blog-img/download.jpg" alt="not found">
-                </div>
-                <div class="box-owner">
-                   <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
-                </div>
-                <div class="box-title"><h3>What Technology is used in vertical farming?</h3></div>
+            <div class="box-title">
+              <h3>What Technology is used in vertical farming?</h3>
             </div>
-            <div class="box box-4">
-                <div class="box-img">
-                    <a href="">Focus </a>
-                    <img src="../04-assets/blog-img/download.jpg" alt="not found">
-                </div>
-                <div class="box-owner">
-                   <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
-                </div>
-                <div class="box-title"><h3>What Technology is used in vertical farming?</h3></div>
+          </div>
+          <div class="box box-2">
+            <div class="box-img">
+              <a href="">Focus </a>
+              <img src="../04-assets/blog-img/download.jpg" alt="not found" />
             </div>
-            <div class="box box-5">
-                <div class="box-img">
-                    <a href="">Focus </a>
-                    <img src="../04-assets/blog-img/download.jpg" alt="not found">
-                </div>
-                <div class="box-owner">
-                   <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
-                </div>
-                <div class="box-title"><h3>What Technology is used in vertical farming?</h3></div>
+            <div class="box-owner">
+              <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
             </div>
-              <div class="box box-6">
-                <div class="box-img">
-                    <a href="">Focus </a>
-                    <img src="../04-assets/blog-img/download.jpg" alt="not found">
-                </div>
-                <div class="box-owner">
-                   <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
-                </div>
-                <div class="box-title"><h3>What Technology is used in vertical farming?</h3></div>
+            <div class="box-title">
+              <h3>What Technology is used in vertical farming?</h3>
             </div>
-            <div class="box box-7">
-                <div class="box-img">
-                    <a href="">Focus </a>
-                    <img src="../04-assets/blog-img/download.jpg" alt="not found">
-                </div>
-                <div class="box-owner">
-                   <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
-                </div>
-                <div class="box-title"><h3>What Technology is used in vertical farming?</h3></div>
+          </div>
+          <div class="box box-3">
+            <div class="box-img">
+              <a href="">Focus </a>
+              <img src="../04-assets/blog-img/download.jpg" alt="not found" />
             </div>
-            <div class="box box-8">
-                <div class="box-img">
-                    <a href="">Focus </a>
-                    <img src="../04-assets/blog-img/download.jpg" alt="not found">
-                </div>
-                <div class="box-owner">
-                   <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
-                </div>
-                <div class="box-title"><h3>What Technology is used in vertical farming?</h3></div>
+            <div class="box-owner">
+              <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
             </div>
-            <div class="box box-9">
-                <div class="box-img">
-                    <a href="">Focus </a>
-                    <img src="../04-assets/blog-img/download.jpg" alt="not found">
-                </div>
-                <div class="box-owner">
-                   <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
-                </div>
-                <div class="box-title"><h3>What Technology is used in vertical farming?</h3></div>
+            <div class="box-title">
+              <h3>What Technology is used in vertical farming?</h3>
             </div>
-              <div class="box box-10">
-                <div class="box-img">
-                    <a href="">Focus </a>
-                    <img src="../04-assets/blog-img/download.jpg" alt="not found">
-                </div>
-                <div class="box-owner">
-                   <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
-                </div>
-                <div class="box-title"><h3>What Technology is used in vertical farming?</h3></div>
+          </div>
+          <div class="box box-4">
+            <div class="box-img">
+              <a href="">Focus </a>
+              <img src="../04-assets/blog-img/download.jpg" alt="not found" />
             </div>
-            <div class="box box-11">
-                <div class="box-img">
-                    <a href="">Focus </a>
-                    <img src="../04-assets/blog-img/download.jpg" alt="not found">
-                </div>
-                <div class="box-owner">
-                   <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
-                </div>
-                <div class="box-title"><h3>What Technology is used in vertical farming?</h3></div>
+            <div class="box-owner">
+              <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
             </div>
-            <div class="box box-12">
-                <div class="box-img">
-                    <a href="">Focus </a>
-                    <img src="../04-assets/blog-img/download.jpg" alt="not found">
-                </div>
-                <div class="box-owner">
-                   <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
-                </div>
-                <div class="box-title"><h3>What Technology is used in vertical farming?</h3></div>
+            <div class="box-title">
+              <h3>What Technology is used in vertical farming?</h3>
             </div>
+          </div>
+          <div class="box box-5">
+            <div class="box-img">
+              <a href="">Focus </a>
+              <img src="../04-assets/blog-img/download.jpg" alt="not found" />
+            </div>
+            <div class="box-owner">
+              <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
+            </div>
+            <div class="box-title">
+              <h3>What Technology is used in vertical farming?</h3>
+            </div>
+          </div>
+          <div class="box box-6">
+            <div class="box-img">
+              <a href="">Focus </a>
+              <img src="../04-assets/blog-img/download.jpg" alt="not found" />
+            </div>
+            <div class="box-owner">
+              <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
+            </div>
+            <div class="box-title">
+              <h3>What Technology is used in vertical farming?</h3>
+            </div>
+          </div>
+          <div class="box box-7">
+            <div class="box-img">
+              <a href="">Focus </a>
+              <img src="../04-assets/blog-img/download.jpg" alt="not found" />
+            </div>
+            <div class="box-owner">
+              <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
+            </div>
+            <div class="box-title">
+              <h3>What Technology is used in vertical farming?</h3>
+            </div>
+          </div>
+          <div class="box box-8">
+            <div class="box-img">
+              <a href="">Focus </a>
+              <img src="../04-assets/blog-img/download.jpg" alt="not found" />
+            </div>
+            <div class="box-owner">
+              <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
+            </div>
+            <div class="box-title">
+              <h3>What Technology is used in vertical farming?</h3>
+            </div>
+          </div>
+          <div class="box box-9">
+            <div class="box-img">
+              <a href="">Focus </a>
+              <img src="../04-assets/blog-img/download.jpg" alt="not found" />
+            </div>
+            <div class="box-owner">
+              <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
+            </div>
+            <div class="box-title">
+              <h3>What Technology is used in vertical farming?</h3>
+            </div>
+          </div>
+          <div class="box box-10">
+            <div class="box-img">
+              <a href="">Focus </a>
+              <img src="../04-assets/blog-img/download.jpg" alt="not found" />
+            </div>
+            <div class="box-owner">
+              <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
+            </div>
+            <div class="box-title">
+              <h3>What Technology is used in vertical farming?</h3>
+            </div>
+          </div>
+          <div class="box box-11">
+            <div class="box-img">
+              <a href="">Focus </a>
+              <img src="../04-assets/blog-img/download.jpg" alt="not found" />
+            </div>
+            <div class="box-owner">
+              <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
+            </div>
+            <div class="box-title">
+              <h3>What Technology is used in vertical farming?</h3>
+            </div>
+          </div>
+          <div class="box box-12">
+            <div class="box-img">
+              <a href="">Focus </a>
+              <img src="../04-assets/blog-img/download.jpg" alt="not found" />
+            </div>
+            <div class="box-owner">
+              <p><i class="fa-regular fa-calendar-days"></i> Feb 2026</p>
+            </div>
+            <div class="box-title">
+              <h3>What Technology is used in vertical farming?</h3>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer"></div>
