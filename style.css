@@ -376,8 +376,7 @@ body {
 }
 
 /* footer area  */
-<<<<<<< HEAD
-=======
+
 
 .section-footer {
     border: 1px solid #000;
@@ -493,7 +492,7 @@ body {
 
 
 }
->>>>>>> 9c4247782fc1ce3014143f46de1e7ced42386423
+
 /* MOBILE RESPONSIVE */
 
 @media only screen and (max-width: 768px) {
