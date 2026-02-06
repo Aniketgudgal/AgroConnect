@@ -392,7 +392,7 @@
   }
 
   .container .about-us {
-    height: 135vh;
+    height: 165vh;
     width: 100%;
   }
   .about-us .about-bottom-div {
@@ -470,6 +470,10 @@
 @media only screen and (max-width: 889px) and (min-width: 501px) {
   .about-us .about-bottom-div {
     flex-direction: column;
+  }
+   .container .about-us {
+    height: 165vh;
+    width: 100%;
   }
   .about-us .about-bottom-div {
     width: 80%;
