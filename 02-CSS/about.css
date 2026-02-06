@@ -22,15 +22,10 @@
 /* nav bar  */
 .container .header {
   grid-area: header;
-
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.header .navbar {
-  background-color: white;
-  border: 2px solid #00000042;
 }
 
 /* nav bar code */
