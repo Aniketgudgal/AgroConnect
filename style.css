@@ -239,6 +239,136 @@ body {
     justify-content: center;
 }
 
+/* section - 3 information area  */
+.section-3{
+    width: 100%;
+    min-height: 100vh;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.contetnt{
+    width: 95%;
+    height: 100vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.124);
+    background-color: white;
+    /* border: 1px solid #000; */
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 15px;
+}
+/* for the navigation button purpose  */
+.content-1{
+    padding-left: 5px;
+    width: 100%;
+    min-height: 40px;
+    /* border: 1px solid #000; */
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+.content-1 button{
+    padding: 4px;
+    width: 95px;
+    border: 1px solid #00000070;
+    background: none;
+    border-radius: 15px;
+}
+.content-1 button a{
+    color: #5a5959;
+    text-decoration: none;
+}
+.content-1 button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 7px #D0F34E;
+    background-color: #D0F34E;
+}
+.content-1 button a:hover{
+    color: black;
+
+}
+/* short information here  */
+.content-2{
+    width: 100%;
+    min-height: 300px;
+    /* border: 1px solid #000; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-2 .content-img{
+    width: 30%;
+    /* border: 1px solid #000; */
+    padding: 30px;
+}
+.content-img ul li{
+    list-style:square;
+   line-height: 40px;
+}
+.content-2 .content-info{
+    width: 70%;
+    padding: 0px 8px;
+    /* border: 1px solid #ff0000; */
+}
+.content-info h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    word-spacing: 2px;
+    text-align: start;
+}
+.content-info p{
+    margin-top: 15px;
+    text-align: start;
+    word-spacing: 3px;
+}
+.content-2 button{
+    margin-top: 15px;
+    padding: 4px;
+    width: 95px;
+    border: 1px solid #00000070;
+    background: none;
+    border-radius: 15px;
+}
+.content-2 button a{
+    color: #5a5959;
+    text-decoration: none;
+}
+.content-2 button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 7px #D0F34E;
+    background-color: #D0F34E;
+}
+.content-2 button a:hover{
+    color: black;
+
+}
+
+/* information card here  */
+.content-3{
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content-3 .c-card-1{
+    width: 20%;
+    min-height: 200px;
+    border: 1px solid #000;
+}
+
+
 /* footer area  */
 
 .section-footer {
