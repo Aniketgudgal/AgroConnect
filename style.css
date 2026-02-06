@@ -141,7 +141,7 @@ body {
 .section-2 {
     width: 100%;
     height: 100vh;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     padding: 50px;
 
     /*
@@ -194,9 +194,11 @@ body {
     width: 90%;
     /* border: 1px solid #000; */
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.315);
 }
+
 .card h2 {
     margin: 8px 0px;
     color: orange;
@@ -237,7 +239,122 @@ body {
     justify-content: center;
 }
 
+/* footer area  */
 
+.section-footer {
+    border: 1px solid #000;
+    background-color: #103120;
+    min-height: 180px;
+}
+
+.section-footer h5 {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    font-weight: lighter;
+}
+
+.footer {
+    width: 100%;
+    min-height: 120px;
+    padding: 20px;
+    background-color: #214b35;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .icons {
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icons i {
+    color: white;
+    font-size: 32px;
+}
+
+.footer .form {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form input {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form button {
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form button:hover {
+    border: 2px solid #00000063;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.411);
+}
+
+.form a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.form h4 {
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
+}
+
+@media screen and (orientation: landscape) and (max-width: 950px) {
+  /* Your styles here */
+    .section-2 {
+        height: 430vh;
+        /* padding: 25px; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 70px 700px 700px;
+        grid-template-areas: "card-1 card-1"
+        "card-2 card-3"
+        "card-4 card-5";
+
+    }
+    .card {
+        border: 2px solid #00000037;
+        border-radius: 0px 0px 50px 0px;
+        width: 100%;
+        height: 700px;
+    }
+    .card-1{
+        grid-area: card-1;
+    }
+    .card-2{
+        grid-area: card-2;
+    }
+    .card-3{
+        grid-area: card-3;
+    }
+    .card-4{
+        grid-area: card-4;
+    }
+    .card-5{
+        grid-area: card-5;
+    }
+
+
+}
 /* MOBILE RESPONSIVE */
 
 @media only screen and (max-width: 768px) {
@@ -316,6 +433,17 @@ body {
     .card p {
         text-align: inherit;
         font-size: 14px;
+    }
+
+    .icons{
+        /* margin-top: 80px; */
+    }
+    .icons i {
+        color: white;
+        font-size: 28px;
+    }
+    .form{
+        flex-direction: column;
     }
 
 }
