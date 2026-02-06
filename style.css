@@ -1031,17 +1031,6 @@ body {
         transform: none;
     }
 
-
-    /* footer  */
-    .icons i {
-        color: white;
-        font-size: 28px;
-    }
-
-    .form {
-        flex-direction: column;
-    }
-
     .choice{
 
         width: 80%;
@@ -1072,4 +1061,14 @@ body {
     .choice i{
         font-size: 5em;
     }   
+
+     /* footer  */
+    .icons i {
+        color: white;
+        font-size: 28px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
 }
