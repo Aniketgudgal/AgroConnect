@@ -19,10 +19,54 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
     background-image: url(./04-assets/H-1.png);
     padding-top: 30px;
     background-size: cover;
+}
+.heading-line{
+    margin: 20px;
+    /* border: 1px solid #ffffff; */
+    width: 50%;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+.heading-line h4{
+    color: #D0F34E;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: lighter;
+    border: 1px solid #D0F34E;
+}
+.heading-line h1{
+    font-size: 3.5em;
+    font-weight: bolder;
+    color: white;
+}
+.heading-line p{
+    color: white;
+    word-spacing: 2px;
+}
+
+.heading-line button {
+    padding: 4px;
+    width: 95px;
+    border: 2px solid #ffffff70;
+    background: #D0F34E;
+    border-radius: 15px;
+    color: #5a5959;
+
+}
+.heading-line button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 30px D0F34E;
 }
 
 /* NAVBAR */
@@ -436,15 +480,87 @@ body {
 }
 
 /* section - 4 */
-.section-4{
-    min-height: 90vh;
+.section-4 {
+    min-height: 70vh;
+}
 
+.section-4 .choice {
+    height: 75vh;
+    margin: auto;
+    width: 90%;
+    /* border: 1px solid #000; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.shopping {
+    height: 60vh;
+    width: 30%;
+    border: 4px solid #9f9f9f6a;
+    background-color: #F1F1F1;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s linear;
+}
+
+.shopping:hover{
+    box-shadow: 0px 0px 30px #103120;
+}
+
+.choice i {
+    font-size: 12em;
+    color: #103120;
+}
+
+.choice button {
+    margin-top: 50px;
+    width: 120px;
+    padding: 8px;
+    border: 1px solid #00000070;
+    border-radius: 15px;
+    color: #5a5959;
+}
+
+
+.choice button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 7px #103120;
+    background-color: #103120;
+    color: white;
+}
+
+.choice button a:hover {
+    color: black;
+
+}
+
+.farmer {
+    height: 60vh;
+    width: 30%;
+    border: 4px solid #9f9f9f6a;
+    background-color: #F1F1F1;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s linear;
+}
+.farmer:hover{
+    box-shadow: 0px 0px 30px #103120;
 }
 
 
 /* footer area  */
-
-
 .section-footer {
     border: 1px solid #000;
     background-color: #103120;
@@ -524,6 +640,16 @@ body {
 
 @media screen and (orientation: landscape) and (max-width: 950px) {
 
+        .heading-line {
+            width: 75%;
+        }
+        .heading-line h4{
+            font-size: 12px;
+        }
+        .heading-line h1{
+            font-size: 2em;
+        }
+
     /* Your styles here */
     .section-2 {
         height: 430vh;
@@ -585,6 +711,7 @@ body {
 
 
     }
+
 
     /* for the navigation button purpose  */
     .content-1 {
@@ -686,11 +813,34 @@ body {
         width: 80%;
 
     }
+
+    .shopping{
+        min-height: 70vh;
+    }
+    .farmer{
+        min-height: 70vh;
+    }
+
+    /* section - 4      */
+    .choice i{
+        font-size: 5em;
+    }   
 }
 
 /* MOBILE RESPONSIVE */
 
 @media only screen and (max-width: 768px) {
+
+    .heading-line{
+        width: 85%;
+    }
+    .heading-line h4{
+        font-size: 10px;
+    }
+    .heading-line h1{
+        font-size: 2.5em;
+    }
+
 
     /* navbar  */
     .hamburger {
@@ -892,4 +1042,34 @@ body {
         flex-direction: column;
     }
 
+    .choice{
+
+        width: 80%;
+        height:70vh;
+        padding: 20px;
+        /* border: 1px solid #000; */
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .choice .shopping{
+        width: 80%;
+        min-height: 200px;
+    }
+    .choice .shopping:hover{
+        box-shadow: none;
+    }
+    .choice .farmer{
+        width: 80%;
+        min-height: 200px;
+    }
+    .choice .farmer:hover{
+        box-shadow: none;
+    }
+
+
+    /* section - 4      */
+    .choice i{
+        font-size: 5em;
+    }   
 }
