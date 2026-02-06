@@ -305,32 +305,35 @@
 .why-2 .inner-row h3 {
   text-align: start;
 }
-@media only screen and (max-width:429px) {
+@media only screen and (min-width:100px) and (max-width:429px) {
  
   /* .container .about-us {
     margin-bottom: 1550px;
 } */
+
 .container {
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: min-content min-content min-content min-content;
-  grid-template-areas:
-    "header"
-    "about-us"
-    "why-choose-us"
-    "footer";
+    grid-template-rows: auto auto auto auto;
+  }
+.about-us .about-bottom-div {
+  height: 100%;
 }
 .container .about-us {
   width: 100%;
   grid-area: about-us;
   position: relative;
   margin-top: 35px;
-  height: 600vh;
-  margin-bottom: 500px;
+  height: auto;
+  margin-bottom: 0;
 }
-.about-bottom-div
+.about-us .about-bottom-div
 {
-  grid-area: about-bottom-div;
-  margin-bottom: 80px;
+  position: static;
+  transform: none;
+  height: auto;
+  margin: 40px auto;
+}
+.why-choose-us {
+  margin-top: 40px;
 }
 .btn-about{
   display: flex;
