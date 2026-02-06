@@ -175,7 +175,7 @@ html
 }
 
 .blogs .box {
-  min-height: 200px;
+  height: 250px;
   /*border: 1px solid #000;
   *//*flex-basis: 50%;
   */display: flex;
@@ -350,5 +350,12 @@ html
 }
 .box .box-title h3 {
     font-size: 1.2em;
+}
+.blogs .box {
+    height: 340px;
+}
+.box .box-img a{
+    width: 90px;
+    text-align: center;
 }
 }
