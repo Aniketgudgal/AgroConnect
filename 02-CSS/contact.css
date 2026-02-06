@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Elms Sans", sans-serif;
 }
 
 .layout {
@@ -163,7 +164,9 @@
     gap: 20px;
     align-items: start;
 }
-
+.a-content-1 p{
+    word-spacing: 2px;
+}
 .a-content-1 input {
     width: 90%;
     padding: 8px;
