@@ -427,7 +427,7 @@
 }
 @media only screen and (max-width:2000px) {
    .container {
-    grid-template-rows: min-content 120vh min-content min-content;
+    grid-template-rows: min-content 90vh min-content min-content;
   }
    .about-us .veg-img {
     top: 0%;
