@@ -356,23 +356,55 @@ body {
 /* information card here  */
 .content-3{
     width: 100%;
-    min-height: 220px;
-    border: 1px solid #000;
+    min-height: 280px;
+    /* border: 1px solid #000; */
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     overflow: hidden;
 }
-.content-3 .c-card-1{
+.content-3 .c-card-i{
     width: 20%;
     min-height: 200px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
-.c-card-1 img{
+.c-card-i img{
     width: 100%;
     min-height: 200px;
     border-radius: 20px;
+}
+.content-3 .c-card-1{
+    padding: 10px 8px;
+    width: 20%;
+    height: 230px;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    /* border: 1px solid #000; */
+
+    transition: 0.3s linear;
+}
+.c-card-1:hover{
+    transform:scale(1.1);
+}
+.c-card-1 h1{
+    font-size: 42px;
+}
+.c-card-1 h5{
+    margin-top: 5px;
+    font-weight: bold;
+}
+.c-card-1 p{
+    margin: 8px 0px;
+    font-size: 14px;
+}
+.c-card-1 a{
+    text-decoration: none;
+    color: black;
+}
+.c-card-1 i{
+    margin-top: 5px;
+    font-size: 32px;
 }
 
 /* footer area  */
