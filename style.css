@@ -20,6 +20,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* justify-content: space-evenly; */
     background-image: url(./04-assets/H-1.png);
     padding-top: 30px;
@@ -28,7 +29,7 @@ body {
 .heading-line{
     margin: 20px;
     /* border: 1px solid #ffffff; */
-    width: 50%;
+    width: 80%;
     height: 70vh;
 
     display: flex;
