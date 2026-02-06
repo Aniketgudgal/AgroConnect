@@ -644,26 +644,30 @@ body {
         /* border: 1px solid #000; */
 
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 300px 300px;
         grid-template-areas: "card-1 card-2"
-        "card-3 card-4";
+            "card-3 card-4";
         align-items: center;
         justify-content: center;
     }
 
-    #card-1{
+    #card-1 {
         grid-area: card-1;
     }
-    #card-2{
+
+    #card-2 {
         grid-area: card-2;
     }
-    #card-3{
+
+    #card-3 {
         grid-area: card-3;
     }
-    #card-4{
+
+    #card-4 {
         grid-area: card-4;
     }
+
     .content-3 .c-card-i {
         width: 80%;
         /* border: 1px solid #000; */
@@ -681,6 +685,7 @@ body {
 
 @media only screen and (max-width: 768px) {
 
+    /* navbar  */
     .hamburger {
         display: block;
     }
@@ -726,6 +731,8 @@ body {
         background-color: #cccccc50;
         border: 2px solid #00000085;
     }
+
+    /* navbar end  */
 
     .section-2 {
         height: 300vh;
