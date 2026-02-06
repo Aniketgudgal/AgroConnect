@@ -857,6 +857,7 @@ body {
         display: none;
         padding: 15px 0;
         border-top: 1px solid #ccc;
+        z-index: 1;
 
     }
 
