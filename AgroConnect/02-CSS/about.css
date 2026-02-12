@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  ;
+}
+
+.container {
+  width: 100%;
+  min-height: 150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: min-content min-content 100vh min-content;
+  grid-template-areas:
+    "header"
+    "about-us"
+    "why-choose-us"
+    "footer";
+}
+
+/* nav bar  */
+.container .header {
+  grid-area: header;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .navbar {
+  background-color: white;
+  border: 2px solid #00000042;
+}
+
+/* nav bar code */
+
+/* about us page code */
+.container .about-us {
+  width: 100%;
+  height: 100vh;
+  grid-area: about-us;
+  position: relative;
+}
+.about-us .we-are {
+  width: 80%;
+  margin: auto;
+}
+
+.about-us .we-are span {
+  font-size: 2em;
+  color: orange;
+  font-family: 'Dancing Script', cursive;
+}
+
+.about-us .heading-div h1 {
+  font-size: 3em;
+}
+
+.about-us .heading-div span {
+  color: green;
+  font-size: 1em;
+  font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.about-us .btn-about {
+  margin-top: 25px;
+}
+
+.about-us .we-are p {
+  line-height: 1.8;
+  width: 50%;
+  margin-top: 12px;
+}
+
+.about-us .btn-about a {
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 8px 15px;
+  font-weight: bold;
+  margin-right: 25px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.btn-about a:hover {
+  padding: 10px 15px;
+  color: black;
+  background-color: white;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+
+/* vegitable img */
+.about-us .veg-img {
+  position: absolute;
+  width: 350px;
+  height: 450px;
+  right: 15%;
+  top: 0%;
+  z-index: 2;
+}
+
+.about-us .veg-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* bottom div of about us page */
+.about-us .about-bottom-div {
+  width: 80%;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  /*border: 1px solid #000;
+  */-webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: white;
+  display: flex;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.about-us .about-bottom-div:hover {
+ box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.about-us .about-bottom-div .box {
+  flex-basis: 25%;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-bottom-div .box .icon-btm {
+  height: 50px;
+  width: 80px;
+  margin-left: 10px;
+}
+
+.about-bottom-div .box .icon-btm h4 {
+  font-weight: 100;
+}
+
+.about-bottom-div .box .icon-btm img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-bottom-div .box span {
+  font-size: 1.2em;
+}
+
+.about-bottom-div .box p {
+  color: rgb(97, 97, 97);
+  font-size: 0.8em;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+#prod {
+  font-weight: bold;
+}
+
+
+/* why choose us */
+
+.container .why-choose-us {
+  grid-area: why-choose-us;
+  background-color: #FFFDEB;
+}
+
+.rows-1 {
+  width: 80%;
+  margin: auto;
+}
+
+.why-choose-us .why-title {
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+  width: 80%;
+  margin: auto;
+}
+
+.why-choose-us .why-title p {
+  color: orange;
+  font-family: 'Caveat', cursive;
+  font-size: 1.6em;
+}
+
+.rows-2 {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  flex-basis: 33%;
+  gap: 10px;
+}
+
+.why-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-choose-us .why-1 {
+  display: flex;
+  flex-basis: 37%;
+}
+
+.rows-2 .inner-row {
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.inner-row .why-content {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inner-row .why-content h3 {
+  text-align: end;
+}
+
+.inner-row .why-content p {
+  text-align: end;
+  margin: auto;
+  font-size: 1em;
+}
+
+.inner-row .why-content-img {
+  height: 80px;
+  width: 180px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(55, 181, 55);
+}
+
+.inner-row .why-content-img i {
+  font-size: 2em;
+  color: white;
+}
+
+.why-choose-us .why-img {
+  flex-basis: 25%;
+}
+
+.why-choose-us .why-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.why-choose-us .why-2 {
+  flex-basis: 37%;
+}
+
+.why-2 .inner-row p {
+  text-align: start;
+}
+
+.inner-row .why-content p {
+  font-size: 0.8em;
+}
+
+.inner-row .why-content h3 {
+  font-size: 1.2em;
+}
+
+.why-2 .inner-row h3 {
+  text-align: start;
+}
+
+
+@media only screen and (max-width:890px) {
+  .container {
+  width: 100%;
+  min-height: 150px;
+  grid-template-rows: min-content min-content min-content min-content;
+ 
+}
+.container .about-us {
+  height: 150vh;
+}
+  .about-us .veg-img {
+  width: 200px;
+  height: 150px;
+  right: 1%;
+  top: 1%;
+}
+.about-us .heading-div h1 {
+  font-size: 2em;
+}
+.about-us .about-bottom-div
+{
+    bottom: 0;
+    width:96%;
+}
+.container .why-choose-us {
+  background-color: white;
+}
+
+.why-choose-us .why-title {
+  margin-top: 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  width: 100%;
+  margin: auto;
+}
+.rows-2 {
+ flex-direction: column;
+  flex-basis: 33%;
+  gap: 10px;
+}
+.rows-2 .inner-row {
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.rows-2 .inner-row:hover
+{
+  transition: 0.2s linear;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+}
+.inner-row .why-content-img {
+  height: 80px;
+  width: 150px;
+  margin: 5px;
+}
+.inner-row .why-content h3 {
+  text-align: start;
+}
+
+.inner-row .why-content p {
+  text-align: start;
+  margin: auto;
+  font-size: 1em;
+}
+}
+@media only screen and (max-width:500px) {
+  .container {
+  grid-template-rows: min-content min-content min-content min-content;
+}
+
+  .container .about-us {
+    height: 135vh;
+     width: 100%;
+     
+  }
+  .about-us .about-bottom-div {
+    width: 80%;
+    height: 500px;
+   margin: 40px auto 0;
+  position: static; 
+  transform: none;
+  }
+
+  .about-us .heading-div h1 {
+    font-size: 2em;
+  }
+
+  .about-us .veg-img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .about-us .veg-img {
+    width: 150px;
+    height: 150px;
+    right: 12%;
+    top: 12%;
+    z-index: 2;
+  }
+
+  .about-us .about-bottom-div {
+    flex-direction: column;
+  }
+  .rows-1 {
+    width: 100%;
+  }
+
+  .rows-2 {
+    flex-direction: column;
+  }
+  .why-choose-us .why-title
+  {
+    margin-top: 0px;
+     width: 80%;
+     line-height: 1.5;
+  }
+  
+  .why-choose-us .why-1 {
+    flex-basis: 100%;
+  }
+  .why-choose-us .why-img {
+    flex-basis: 100%;
+  }
+
+  .why-choose-us .why-2 {
+    flex-basis: 100%;
+  }
+  .inner-row .why-content-img {
+  height: 80px;
+  width: 220px;
+}
+.rows-2 .inner-row {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 0px 0px, rgba(60, 64, 67, 0.15) 0px 0px 0px 0px;
+}
+  .inner-row .why-content h3 {
+    text-align: start;
+    font-size: 1.5em;
+  }
+
+  .inner-row .why-content p {
+    text-align: start;
+    margin: auto;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width:889px)  and (min-width:501px){
+  .about-us .about-bottom-div {
+    flex-direction: column;
+  }
+   .about-us .about-bottom-div {
+    width: 80%;
+    height: 500px;
+   margin: 40px auto 0;
+  position: static; 
+  transform: none;
+  }
+  .about-us .veg-img {
+  right: 2%;
+  top: 5%;
+}
+}
+.container .footer {
+  grid-area: footer;
+}
