@@ -220,8 +220,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📧 Contact & Support
 
-- **Email:** [your-email@example.com](mailto:your-email@example.com)
-- **Project Issues:** [GitHub Issues](https://github.com/yourusername/AgroConnect/issues)
+- **Email:** [aniketgudgal5867@gmail.com, yadnyneshdhangar@gmail.com](mailto:your-email@example.com)
+- **Project Issues:** [GitHub Issues](https://github.com/Aniketgudgal/AgroConnect)
 - **Discussion Forum:** Visit our contact page at `01-HTML/contact.html`
 
 ---
